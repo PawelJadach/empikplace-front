@@ -1,0 +1,20 @@
+.contact {
+  width: 80%;
+  padding: 51px 64px;
+  display: flex;
+  border: 0.4px solid #CDD1D4;
+  border-radius: 8px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+
+  .header {
+    font-family: var(--font-empik-black);
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .button {
+    padding: 16px 50px;
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  background-color: var(--mainDark);
+  text-decoration: none;
+  color: var(--white);
+  padding: 16px;
+  border-radius: 8px;
+  font-family: var(--font-empik-black);
+  font-size: 14px;
+  transition: .2s;
+
+  &:hover {
+    background-color: #243B47;
+  }
+}
