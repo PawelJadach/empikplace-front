@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         </Head>
 
         <main>
-          <h1>
+          <h1 className='font-bold underline'>
             Welcome to <a href="https://nextjs.org">home page</a>
           </h1>
         </main>

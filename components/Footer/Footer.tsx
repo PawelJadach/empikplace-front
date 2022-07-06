@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={styles.contact}>
         <div className={styles.text}>
           <p className={styles.header}>Masz pytania?</p>
-          <p>Zapraszamy do kontaktu</p>
+          <p>Zapraszamy do kontaktu poprzez formularz</p>
         </div>
         <Button className={styles.button} href="https://www.empik.com/marketplace/support/kontakt" text="Skontaktuj się z nami" />
       </div>

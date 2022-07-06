@@ -6,7 +6,7 @@ const Layout: React.FC = (props) => {
   return (
     <div className={styles.container}>
       <Navbar />
-      {props.children}
+        {props.children}
       <Footer />
     </div>
   )

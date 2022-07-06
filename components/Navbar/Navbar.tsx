@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link"
+import { useRouter } from "next/router";
 import { useState } from "react";
 import Button from "../Button/Button";
 import styles from './Navbar.module.scss';
@@ -30,6 +31,7 @@ const Navbar = () => {
         <div className={clsx(styles.menu, isOpen && styles.open)}>
           <NavLink href="/premium" text="Premium" />
           <NavLink href="/dlaczego-warto" text="Dlaczego warto" />
+          <NavLink href="/blog" text="Blog   " />
           <NavLink href="/pomoc" text="Pomoc" />
           <NavLink href="/integracje" text="Integracje" />
           <Button className={styles.button} href="https://www.empik.com/marketplace-wniosek" text="Zostań sprzedawcą" />
@@ -46,7 +48,10 @@ interface NavLinkProps {
 }
 
 const NavLink = (props: NavLinkProps) => {
-  return <Link href={props.href}><a className={styles.item}>{props.text}</a></Link>;
+  const router = useRouter();
+  const activePath = router.pathname;
+
+  return <Link href={props.href}><a className={clsx(styles.item, activePath === props.href && styles.itemActive)}>{props.text}</a></Link>;
 }
 
 export default Navbar
